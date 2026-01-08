@@ -1,11 +1,15 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 export default {
   development: {
     client: 'pg',
-    connection: process.env.DATABASE_URL || {
-      connectionString: 'postgresql://car_management_12rk_user:CuDHz1rWfIDRevdHLyqJi0tEuGzEgGrj@dpg-d5g1nbali9vc73bdggl0-a.oregon-postgres.render.com:5432/car_management_12rk',
+    connection: {
+      connectionString:
+        process.env.DATABASE_URL ||
+        'postgresql://car_management_12rk_user:CuDHz1rWfIDRevdHLyqJi0tEuGzEgGrj@dpg-d5g1nbali9vc73bdggl0-a.oregon-postgres.render.com:5432/car_management_12rk',
       ssl: { rejectUnauthorized: false }
     },
     migrations: {
@@ -19,14 +23,12 @@ export default {
       max: 10
     }
   },
+
   production: {
     client: 'pg',
     connection: {
-      host: process.env.DB_HOST,
-      port: process.env.DB_PORT,
-      database: process.env.DB_NAME,
-      user: process.env.DB_USER,
-      password: process.env.DB_PASSWORD
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false }
     },
     migrations: {
       directory: './src/database/migrations'
@@ -40,4 +42,3 @@ export default {
     }
   }
 };
-
