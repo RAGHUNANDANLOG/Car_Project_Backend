@@ -4,12 +4,9 @@ dotenv.config();
 export default {
   development: {
     client: 'pg',
-    connection: {
-      host: process.env.DB_HOST || '127.0.0.1',
-      port: process.env.DB_PORT || 5434,
-      database: process.env.DB_NAME || 'car_management',
-      user: process.env.DB_USER || 'postgres',
-      password: process.env.DB_PASSWORD || 'postgres123'
+    connection: process.env.DATABASE_URL || {
+      connectionString: 'postgresql://car_management_12rk_user:CuDHz1rWfIDRevdHLyqJi0tEuGzEgGrj@dpg-d5g1nbali9vc73bdggl0-a.oregon-postgres.render.com:5432/car_management_12rk',
+      ssl: { rejectUnauthorized: false }
     },
     migrations: {
       directory: './src/database/migrations'
