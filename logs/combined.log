@@ -1,0 +1,434 @@
+2026-01-08 22:49:30 [INFO]: Server running on port 6000
+2026-01-08 22:50:33 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-08 22:50:33 [INFO]: GET /api/commission/report
+2026-01-08 22:50:33 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 44ms
+2026-01-08 22:50:33 [INFO]: GET /api/commission/report 200 - 62ms
+2026-01-08 22:50:33 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-08 22:50:33 [INFO]: GET /api/commission/report
+2026-01-08 22:50:33 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 8ms
+2026-01-08 22:50:33 [INFO]: GET /api/commission/report 200 - 12ms
+2026-01-08 22:51:03 [INFO]: POST /api/car-models
+2026-01-08 22:51:03 [ERROR]: CarModelService createCarModel error: insert into "car_models" ("brand", "car_class", "date_of_manufacturing", "description", "features", "is_active", "model_code", "model_name", "price", "sort_order") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) returning * - numeric field overflow
+2026-01-08 22:51:03 [ERROR]: error: insert into "car_models" ("brand", "car_class", "date_of_manufacturing", "description", "features", "is_active", "model_code", "model_name", "price", "sort_order") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) returning * - numeric field overflow
+    at Parser.parseErrorMessage (/Users/raghunandandas/Downloads/car_project/backend/node_modules/pg-protocol/dist/parser.js:285:98)
+    at Parser.handlePacket (/Users/raghunandandas/Downloads/car_project/backend/node_modules/pg-protocol/dist/parser.js:122:29)
+    at Parser.parse (/Users/raghunandandas/Downloads/car_project/backend/node_modules/pg-protocol/dist/parser.js:35:38)
+    at Socket.<anonymous> (/Users/raghunandandas/Downloads/car_project/backend/node_modules/pg-protocol/dist/index.js:11:42)
+    at Socket.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at TCP.onStreamRead (node:internal/stream_base_commons:191:23)
+2026-01-08 22:51:03 [WARN]: POST /api/car-models 500 - 56ms
+2026-01-08 22:51:15 [INFO]: POST /api/car-models
+2026-01-08 22:51:15 [INFO]: Car model created: CDWR342424
+2026-01-08 22:51:15 [INFO]: POST /api/car-models 201 - 42ms
+2026-01-08 22:51:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 22:51:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 15ms
+2026-01-08 22:51:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 22:51:15 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-08 22:51:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 11ms
+2026-01-08 22:51:15 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 200 - 10ms
+2026-01-08 22:51:23 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 22:51:23 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 67ms
+2026-01-08 22:51:23 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 22:51:23 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-08 22:51:23 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 0ms
+2026-01-08 22:51:23 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 5ms
+2026-01-08 22:54:08 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 22:54:08 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 22ms
+2026-01-08 22:54:08 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 22:54:08 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-08 22:54:08 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-08 22:54:08 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 8ms
+2026-01-08 23:20:04 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 23:20:04 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 32ms
+2026-01-08 23:20:04 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 23:20:04 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-08 23:20:04 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 2ms
+2026-01-08 23:20:04 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 12ms
+2026-01-08 23:21:20 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 23:21:20 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 18ms
+2026-01-08 23:21:20 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-08 23:21:20 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 21ms
+2026-01-08 23:21:20 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-08 23:21:20 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 2ms
+2026-01-09 00:16:19 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:16:19 [INFO]: GET /api/commission/report
+2026-01-09 00:16:19 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 25ms
+2026-01-09 00:16:19 [INFO]: GET /api/commission/report 200 - 29ms
+2026-01-09 00:16:19 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:16:19 [INFO]: GET /api/commission/report
+2026-01-09 00:16:19 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 14ms
+2026-01-09 00:16:19 [INFO]: GET /api/commission/report 200 - 18ms
+2026-01-09 00:16:20 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:16:20 [INFO]: GET /api/commission/rules
+2026-01-09 00:16:20 [INFO]: GET /api/commission/salesmen 200 - 12ms
+2026-01-09 00:16:20 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:16:20 [INFO]: GET /api/commission/rules 200 - 7ms
+2026-01-09 00:16:20 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:16:20 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 15ms
+2026-01-09 00:16:20 [INFO]: GET /api/commission/salesmen 200 - 11ms
+2026-01-09 00:16:20 [INFO]: GET /api/commission/rules
+2026-01-09 00:16:20 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:16:20 [INFO]: GET /api/commission/rules 200 - 5ms
+2026-01-09 00:16:20 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 11ms
+2026-01-09 00:16:29 [INFO]: GET /api/commission/export?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:16:29 [INFO]: GET /api/commission/export?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 16ms
+2026-01-09 00:17:30 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:17:30 [INFO]: GET /api/commission/report
+2026-01-09 00:17:30 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 23ms
+2026-01-09 00:17:30 [INFO]: GET /api/commission/report 200 - 39ms
+2026-01-09 00:17:30 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:17:30 [INFO]: GET /api/commission/report
+2026-01-09 00:17:30 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 5ms
+2026-01-09 00:17:30 [INFO]: GET /api/commission/report 200 - 10ms
+2026-01-09 00:17:30 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:17:30 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-09 00:17:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:17:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:17:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:17:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 9ms
+2026-01-09 00:17:34 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:17:34 [INFO]: GET /api/commission/report
+2026-01-09 00:17:34 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 8ms
+2026-01-09 00:17:34 [INFO]: GET /api/commission/report 200 - 15ms
+2026-01-09 00:17:34 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:17:34 [INFO]: GET /api/commission/report
+2026-01-09 00:17:34 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:17:34 [INFO]: GET /api/commission/report 200 - 16ms
+2026-01-09 00:17:37 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:17:37 [INFO]: GET /api/commission/salesmen 200 - 6ms
+2026-01-09 00:17:37 [INFO]: GET /api/commission/rules
+2026-01-09 00:17:37 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:17:37 [INFO]: GET /api/commission/rules 200 - 4ms
+2026-01-09 00:17:37 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:17:37 [INFO]: GET /api/commission/salesmen 200 - 5ms
+2026-01-09 00:17:37 [INFO]: GET /api/commission/rules
+2026-01-09 00:17:37 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 19ms
+2026-01-09 00:17:37 [INFO]: GET /api/commission/rules 200 - 11ms
+2026-01-09 00:17:37 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:17:37 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 21ms
+2026-01-09 00:17:39 [INFO]: GET /api/commission/export?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:17:39 [INFO]: GET /api/commission/export?salesmanId=&sortBy=total_commission&sortOrder=desc 304 - 15ms
+2026-01-09 00:20:08 [INFO]: GET /api/commission/export?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:20:08 [INFO]: GET /api/commission/export?salesmanId=&sortBy=total_commission&sortOrder=desc 304 - 22ms
+2026-01-09 00:21:18 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:18 [INFO]: GET /api/commission/report
+2026-01-09 00:21:19 [INFO]: GET /api/commission/report 200 - 25ms
+2026-01-09 00:21:19 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 29ms
+2026-01-09 00:21:19 [INFO]: GET /api/commission/report
+2026-01-09 00:21:19 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:19 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:21:19 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-09 00:21:19 [INFO]: GET /api/commission/report 200 - 10ms
+2026-01-09 00:21:19 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:21:19 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:19 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:21:19 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:19 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 7ms
+2026-01-09 00:21:22 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:21:22 [INFO]: GET /api/commission/rules
+2026-01-09 00:21:22 [INFO]: GET /api/commission/salesmen 200 - 5ms
+2026-01-09 00:21:22 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:21:22 [INFO]: GET /api/commission/rules 200 - 7ms
+2026-01-09 00:21:22 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:21:22 [INFO]: GET /api/commission/rules
+2026-01-09 00:21:22 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 19ms
+2026-01-09 00:21:22 [INFO]: GET /api/commission/salesmen 200 - 18ms
+2026-01-09 00:21:22 [INFO]: GET /api/commission/rules 200 - 20ms
+2026-01-09 00:21:22 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:21:22 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 13ms
+2026-01-09 00:21:40 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:40 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 28ms
+2026-01-09 00:21:40 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:40 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 4ms
+2026-01-09 00:21:41 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:41 [INFO]: GET /api/commission/report
+2026-01-09 00:21:41 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:21:41 [INFO]: GET /api/commission/report 200 - 16ms
+2026-01-09 00:21:41 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:21:41 [INFO]: GET /api/commission/report
+2026-01-09 00:21:41 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 8ms
+2026-01-09 00:21:41 [INFO]: GET /api/commission/report 200 - 16ms
+2026-01-09 00:30:13 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:30:13 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 26ms
+2026-01-09 00:30:13 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:30:13 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 6ms
+2026-01-09 00:31:27 [INFO]: POST /api/car-models
+2026-01-09 00:31:27 [INFO]: Car model created: HJEGJE2332
+2026-01-09 00:31:27 [INFO]: POST /api/car-models 201 - 65ms
+2026-01-09 00:31:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:31:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 12ms
+2026-01-09 00:31:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:31:27 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:31:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 5ms
+2026-01-09 00:31:27 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:31:27 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-09 00:31:27 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 200 - 8ms
+2026-01-09 00:32:40 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:40 [INFO]: GET /api/commission/report
+2026-01-09 00:32:41 [INFO]: GET /api/commission/report 200 - 32ms
+2026-01-09 00:32:41 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 45ms
+2026-01-09 00:32:41 [INFO]: GET /api/commission/report
+2026-01-09 00:32:41 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:41 [INFO]: GET /api/commission/report 200 - 11ms
+2026-01-09 00:32:41 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 15ms
+2026-01-09 00:32:47 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:47 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 23ms
+2026-01-09 00:32:47 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:47 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 5ms
+2026-01-09 00:32:47 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:32:47 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:32:47 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-09 00:32:47 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 1ms
+2026-01-09 00:32:51 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:51 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 15ms
+2026-01-09 00:32:51 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:51 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:32:51 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 2ms
+2026-01-09 00:32:51 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:32:51 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 0ms
+2026-01-09 00:32:51 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 6ms
+2026-01-09 00:32:53 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:53 [INFO]: GET /api/commission/report
+2026-01-09 00:32:53 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 11ms
+2026-01-09 00:32:53 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:32:53 [INFO]: GET /api/commission/report 200 - 17ms
+2026-01-09 00:32:53 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 16ms
+2026-01-09 00:32:53 [INFO]: GET /api/commission/report
+2026-01-09 00:32:53 [INFO]: GET /api/commission/report 200 - 9ms
+2026-01-09 00:32:56 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:32:56 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:32:56 [INFO]: GET /api/commission/rules
+2026-01-09 00:32:56 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 16ms
+2026-01-09 00:32:56 [INFO]: GET /api/commission/salesmen 200 - 15ms
+2026-01-09 00:32:56 [INFO]: GET /api/commission/rules 200 - 14ms
+2026-01-09 00:32:56 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:32:56 [INFO]: GET /api/commission/rules
+2026-01-09 00:32:56 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:32:56 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 35ms
+2026-01-09 00:32:56 [INFO]: GET /api/commission/rules 200 - 34ms
+2026-01-09 00:32:56 [INFO]: GET /api/commission/salesmen 200 - 37ms
+2026-01-09 00:33:09 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:33:09 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 28ms
+2026-01-09 00:33:09 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:33:09 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:33:09 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 9ms
+2026-01-09 00:33:09 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 5ms
+2026-01-09 00:33:09 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:33:09 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 2ms
+2026-01-09 00:33:09 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:33:09 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 200 - 44ms
+2026-01-09 00:33:31 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:33:31 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:33:31 [INFO]: GET /api/commission/rules
+2026-01-09 00:33:31 [INFO]: GET /api/commission/salesmen 200 - 13ms
+2026-01-09 00:33:31 [INFO]: GET /api/commission/rules 200 - 12ms
+2026-01-09 00:33:31 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 62ms
+2026-01-09 00:33:31 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:33:31 [INFO]: GET /api/commission/rules
+2026-01-09 00:33:31 [INFO]: GET /api/commission/salesmen 200 - 4ms
+2026-01-09 00:33:31 [INFO]: GET /api/commission/rules 200 - 6ms
+2026-01-09 00:33:31 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:33:31 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 18ms
+2026-01-09 00:33:35 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:33:35 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 18ms
+2026-01-09 00:33:35 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:33:35 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 6ms
+2026-01-09 00:33:35 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:33:35 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 2ms
+2026-01-09 00:33:35 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:33:35 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 4ms
+2026-01-09 00:33:35 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:33:35 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-09 00:33:38 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:33:38 [INFO]: GET /api/commission/rules
+2026-01-09 00:33:38 [INFO]: GET /api/commission/rules 200 - 4ms
+2026-01-09 00:33:38 [INFO]: GET /api/commission/salesmen 200 - 9ms
+2026-01-09 00:33:38 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:33:38 [INFO]: GET /api/commission/rules
+2026-01-09 00:33:38 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:33:38 [INFO]: GET /api/commission/rules 200 - 7ms
+2026-01-09 00:33:38 [INFO]: GET /api/commission/salesmen 200 - 6ms
+2026-01-09 00:33:38 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 26ms
+2026-01-09 00:33:38 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:33:38 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 12ms
+2026-01-09 00:35:48 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:35:48 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 44ms
+2026-01-09 00:35:50 [INFO]: GET /api/commission/report?salesmanId=1&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:35:50 [INFO]: GET /api/commission/report?salesmanId=1&sortBy=total_commission&sortOrder=desc 200 - 10ms
+2026-01-09 00:35:55 [INFO]: GET /api/commission/export?salesmanId=1&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:35:55 [INFO]: GET /api/commission/export?salesmanId=1&sortBy=total_commission&sortOrder=desc 200 - 9ms
+2026-01-09 00:36:26 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:36:26 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 13ms
+2026-01-09 00:36:26 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:36:26 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:36:26 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:36:26 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 3ms
+2026-01-09 00:36:26 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 8ms
+2026-01-09 00:36:26 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 27ms
+2026-01-09 00:36:27 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:36:27 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 2ms
+2026-01-09 00:36:35 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:36:35 [INFO]: GET /api/commission/rules
+2026-01-09 00:36:35 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:36:35 [INFO]: GET /api/commission/salesmen 200 - 13ms
+2026-01-09 00:36:35 [INFO]: GET /api/commission/rules 200 - 14ms
+2026-01-09 00:36:35 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:36:35 [INFO]: GET /api/commission/rules
+2026-01-09 00:36:35 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 36ms
+2026-01-09 00:36:35 [INFO]: GET /api/commission/salesmen 200 - 22ms
+2026-01-09 00:36:35 [INFO]: GET /api/commission/rules 200 - 27ms
+2026-01-09 00:36:35 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:36:35 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 16ms
+2026-01-09 00:36:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:36:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 16ms
+2026-01-09 00:36:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:36:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 9ms
+2026-01-09 00:36:46 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:36:46 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:36:46 [INFO]: GET /api/commission/rules
+2026-01-09 00:36:46 [INFO]: GET /api/commission/salesmen 200 - 5ms
+2026-01-09 00:36:46 [INFO]: GET /api/commission/rules 200 - 6ms
+2026-01-09 00:36:46 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 24ms
+2026-01-09 00:36:46 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:36:46 [INFO]: GET /api/commission/rules
+2026-01-09 00:36:46 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:36:46 [INFO]: GET /api/commission/salesmen 200 - 3ms
+2026-01-09 00:36:46 [INFO]: GET /api/commission/rules 200 - 3ms
+2026-01-09 00:36:46 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 20ms
+2026-01-09 00:37:05 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:05 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 11ms
+2026-01-09 00:37:05 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:05 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:37:05 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:37:05 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 4ms
+2026-01-09 00:37:05 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 4ms
+2026-01-09 00:37:05 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 16ms
+2026-01-09 00:37:07 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:07 [INFO]: GET /api/commission/report
+2026-01-09 00:37:07 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 17ms
+2026-01-09 00:37:07 [INFO]: GET /api/commission/report 200 - 23ms
+2026-01-09 00:37:07 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:07 [INFO]: GET /api/commission/report
+2026-01-09 00:37:07 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 11ms
+2026-01-09 00:37:07 [INFO]: GET /api/commission/report 200 - 15ms
+2026-01-09 00:37:11 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:37:11 [INFO]: GET /api/commission/rules
+2026-01-09 00:37:11 [INFO]: GET /api/commission/salesmen 200 - 33ms
+2026-01-09 00:37:11 [INFO]: GET /api/commission/rules 200 - 31ms
+2026-01-09 00:37:11 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:37:11 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:37:11 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 14ms
+2026-01-09 00:37:11 [INFO]: GET /api/commission/rules
+2026-01-09 00:37:11 [INFO]: GET /api/commission/salesmen 200 - 11ms
+2026-01-09 00:37:11 [INFO]: GET /api/commission/rules 200 - 6ms
+2026-01-09 00:37:11 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:37:11 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 16ms
+2026-01-09 00:37:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:37:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:15 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 12ms
+2026-01-09 00:37:15 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:37:15 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:37:15 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 2ms
+2026-01-09 00:37:15 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 3ms
+2026-01-09 00:37:17 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:17 [INFO]: GET /api/commission/report
+2026-01-09 00:37:17 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:37:17 [INFO]: GET /api/commission/report 200 - 17ms
+2026-01-09 00:37:17 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:17 [INFO]: GET /api/commission/report
+2026-01-09 00:37:17 [INFO]: GET /api/car-models?limit=5&sortBy=created_at&sortOrder=desc 200 - 9ms
+2026-01-09 00:37:17 [INFO]: GET /api/commission/report 200 - 18ms
+2026-01-09 00:37:22 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:22 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 26ms
+2026-01-09 00:37:22 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:22 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:37:22 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 1ms
+2026-01-09 00:37:22 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:37:22 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-09 00:37:22 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 12ms
+2026-01-09 00:37:30 [INFO]: GET /api/car-models/2
+2026-01-09 00:37:30 [INFO]: GET /api/car-models/2 200 - 10ms
+2026-01-09 00:37:30 [INFO]: GET /api/car-models/2
+2026-01-09 00:37:30 [INFO]: GET /api/car-models/2 200 - 8ms
+2026-01-09 00:37:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:37:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:32 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 6ms
+2026-01-09 00:37:33 [INFO]: GET /api/car-models/2
+2026-01-09 00:37:33 [INFO]: GET /api/car-models/2 200 - 7ms
+2026-01-09 00:37:33 [INFO]: GET /api/car-models/2
+2026-01-09 00:37:33 [INFO]: GET /api/car-models/2 200 - 6ms
+2026-01-09 00:37:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 8ms
+2026-01-09 00:37:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:37:43 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 8ms
+2026-01-09 00:37:43 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:37:43 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 2ms
+2026-01-09 00:37:43 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:37:43 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 1ms
+2026-01-09 00:37:45 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:37:45 [INFO]: GET /api/commission/rules
+2026-01-09 00:37:45 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:37:45 [INFO]: GET /api/commission/salesmen 200 - 6ms
+2026-01-09 00:37:45 [INFO]: GET /api/commission/rules 200 - 7ms
+2026-01-09 00:37:45 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:37:45 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 21ms
+2026-01-09 00:37:45 [INFO]: GET /api/commission/salesmen 200 - 14ms
+2026-01-09 00:37:45 [INFO]: GET /api/commission/rules
+2026-01-09 00:37:45 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:37:45 [INFO]: GET /api/commission/rules 200 - 6ms
+2026-01-09 00:37:45 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 13ms
+2026-01-09 00:38:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:38:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 17ms
+2026-01-09 00:38:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:38:27 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 26ms
+2026-01-09 00:38:27 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:38:27 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:38:27 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 3ms
+2026-01-09 00:38:27 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 1ms
+2026-01-09 00:38:34 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:38:34 [INFO]: GET /api/commission/rules
+2026-01-09 00:38:34 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:38:34 [INFO]: GET /api/commission/rules 200 - 10ms
+2026-01-09 00:38:34 [INFO]: GET /api/commission/salesmen 200 - 14ms
+2026-01-09 00:38:34 [INFO]: GET /api/commission/rules
+2026-01-09 00:38:34 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:38:34 [INFO]: GET /api/commission/rules 200 - 7ms
+2026-01-09 00:38:34 [INFO]: GET /api/commission/salesmen 200 - 12ms
+2026-01-09 00:38:34 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 41ms
+2026-01-09 00:38:34 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:38:34 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 12ms
+2026-01-09 00:39:46 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:39:46 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 29ms
+2026-01-09 00:39:46 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:39:46 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:39:46 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:39:46 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 0ms
+2026-01-09 00:39:46 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 2ms
+2026-01-09 00:39:46 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 80ms
+2026-01-09 00:39:46 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:39:46 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 0ms
+2026-01-09 00:39:54 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:39:54 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 13ms
+2026-01-09 00:39:54 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc
+2026-01-09 00:39:54 [INFO]: GET /api/car-models?page=1&limit=10&search=&sortBy=created_at&sortOrder=desc 200 - 10ms
+2026-01-09 00:39:54 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png
+2026-01-09 00:39:54 [INFO]: GET /uploads/car-models/37f08760-60e3-4142-b056-7b4dee1d7d65.png 304 - 2ms
+2026-01-09 00:39:54 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png
+2026-01-09 00:39:54 [INFO]: GET /uploads/car-models/53c058c0-ed2c-4427-bed5-5800c864053d.png 304 - 2ms
+2026-01-09 00:40:27 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:40:27 [INFO]: GET /api/commission/rules
+2026-01-09 00:40:27 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:40:27 [INFO]: GET /api/commission/salesmen 200 - 17ms
+2026-01-09 00:40:27 [INFO]: GET /api/commission/rules 200 - 15ms
+2026-01-09 00:40:27 [INFO]: GET /api/commission/salesmen
+2026-01-09 00:40:27 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 67ms
+2026-01-09 00:40:27 [INFO]: GET /api/commission/salesmen 200 - 53ms
+2026-01-09 00:40:27 [INFO]: GET /api/commission/rules
+2026-01-09 00:40:27 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc
+2026-01-09 00:40:27 [INFO]: GET /api/commission/rules 200 - 5ms
+2026-01-09 00:40:27 [INFO]: GET /api/commission/report?salesmanId=&sortBy=total_commission&sortOrder=desc 200 - 15ms
