@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # Car Management System - Backend API
 
 The backend API for the Car Management System, built with Node.js, Express, and PostgreSQL. It handles car model management, image uploads, and commission calculations.
@@ -105,4 +102,3 @@ backend/
 ## 🛡 Security & Validation
 - **Image Uploads**: Restricted to images (JPEG, PNG, GIF, WebP) with a max size of 5MB per file.
 - **Encryption**: Sensitive data fields are encrypted at rest using AES-256.
->>>>>>> 55b8f28 (Updated readme file)
